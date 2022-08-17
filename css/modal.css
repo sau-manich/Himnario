@@ -1,0 +1,126 @@
+
+.suscribe{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 0%;
+    padding: 10px;
+    background-color: white;
+    color: #5691c8;
+    font-weight: bold;
+    width: 120px;
+    text-align: center;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    trasition: all 0.4s ease-out;
+}
+.suscribe:hover{
+    background-color: #396288;
+    color: white;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(171, 170, 170, 0.7);
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+}
+.modal{
+    margin: 250px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    width: 80%;
+    position: relative;
+}
+.close{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(229, 229, 229);
+}
+.modal.close:hover{
+    color:#5691c8
+}
+.modal .content{
+    height: 100px;
+    background-color: #1a6e86;
+    margin: -20px;
+    padding: 30px;
+    border-radius: 15px 15px 0px 0px;
+    text-align: center;
+}
+.content:after{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #1a6e86;
+    top: 90px;
+    left: 48%;/* el posicionamiento del indicador diamante */
+    transform: rotateZ(45deg);
+}
+/* .modal .content{
+    height: 30px;
+    background-color: #4a8ce9;
+    margin: -20px;
+    padding: 30px;
+    border-radius: 15px 15px 0px 0px;
+    text-align: center;
+}
+.content:after{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #4a8ce9;
+    top: 80px;
+    left: 48%;
+    transform: rotateZ(45deg);
+}
+img{
+    margin-top: -100px;
+} */
+.content-2{
+    text-align: center;
+}
+.content-2 h1{
+    color: #053e8a;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+.content-2 p{
+    font-size: 14px;
+    color: #756e6e;
+}
+.input{
+    width: 65%;
+    padding: 14px;
+    display: block;
+    margin: 0 auto;
+    background: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+}
+.send{
+    padding: 10px 30px;
+    margin: 20px 0px;
+    background-color: #1161cb;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 0px;
+}
